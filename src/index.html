@@ -9,7 +9,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
+      href="../assets/images/favicon-32x32.png"
     />
 
     <title>Frontend Mentor | Results summary component</title>
@@ -29,7 +29,7 @@
         <div
           class="circle flex flex-col place-self-center gap-3 border border-[transparent] rounded-full p-8 w-36 lg:w-48 lg:h-48 lg:p-[3.1875rem] lg:gap-1 lg:mb-3"
         >
-          <span class="text-white font-extrabold text-5xl lg:text-[4.25rem]">76</span>
+          <span id="totalScore" class="text-white font-extrabold text-5xl lg:text-[4.25rem]"></span>
           <span class="lg:text-base">of 100</span>
         </div>
         <h2
@@ -53,52 +53,44 @@
             class="flex justify-between items-center bg-[#ff575715] px-3 py-4 rounded-md lg:py-3.5 lg:px-3.5"
           >
             <div
-              class="flex gap-3 text-[#ff5757] font-bold text-sm lg:text-base lg:tracking-tight"
+              class="icon_category flex gap-3 text-[#ff5757] font-bold text-sm lg:text-base lg:tracking-tight"
             >
-              <img src="../assets/images/icon-reaction.svg" alt="" />
-              Reaction
             </div>
             <div class="text-sm flex gap-2.5 items-center lg:text-base">
-              <span class="font-bold">80 /</span> <span>100</span>
+              <span class="score font-bold"></span> <span>100</span>
             </div>
           </div>
           <div
             class="flex justify-between items-center bg-[#ffb11f15] px-3 py-4 rounded-md lg:py-3.5 lg:px-3.5"
           >
             <div
-              class="flex gap-3 text-[#ffb11f] font-bold text-sm lg:text-base lg:tracking-tight"
+              class="icon_category flex gap-3 text-[#ffb11f] font-bold text-sm lg:text-base lg:tracking-tight"
             >
-              <img src="../assets/images/icon-memory.svg" alt="" />
-              Memory
             </div>
             <div class="text-sm flex gap-2.5 items-center lg:text-base">
-              <span class="font-bold">92 /</span> <span>100</span>
+              <span class="score font-bold"></span> <span>100</span>
             </div>
           </div>
           <div
             class="flex justify-between items-center bg-[#00bd9115] px-3 py-4 rounded-md lg:py-3.5 lg:px-3.5"
           >
             <div
-              class="flex gap-3 text-[#00bd91] font-bold text-sm lg:text-base lg:tracking-tight"
+              class="icon_category flex gap-3 text-[#00bd91] font-bold text-sm lg:text-base lg:tracking-tight"
             >
-              <img src="../assets/images/icon-verbal.svg" alt="" />
-              Verbal
             </div>
             <div class="text-sm flex gap-2.5 items-center lg:text-base">
-              <span class="font-bold">61 /</span> <span>100</span>
+              <span class="score font-bold"></span> <span>100</span>
             </div>
           </div>
           <div
             class="flex justify-between items-center bg-[#1125d415] px-3 py-4 rounded-md lg:py-3.5 lg:px-3.5"
           >
             <div
-              class="flex gap-3 text-[#1125d4] font-bold text-sm lg:text-base lg:tracking-tight"
+              class="icon_category flex gap-3 text-[#1125d4] font-bold text-sm lg:text-base lg:tracking-tight"
             >
-              <img src="../assets/images/icon-visual.svg" alt="" />
-              Visual
             </div>
             <div class="text-sm flex gap-2.5 items-center lg:text-base">
-              <span class="font-bold">72 /</span> <span>100</span>
+              <span class="score font-bold"></span> <span>100</span>
             </div>
           </div>
         </div>
@@ -119,4 +111,5 @@
       >.
     </footer>
   </body>
+  <script src="../src/scripts/script.js"></script>
 </html>
