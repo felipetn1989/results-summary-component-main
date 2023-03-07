@@ -1,3 +1,5 @@
+//variable containing the JSON file data
+
 const data = [
   {
     category: "Reaction",
@@ -21,11 +23,15 @@ const data = [
   },
 ];
 
+//adding the score values to the page
+
 const scores = document.querySelectorAll(".score")
 
 scores.forEach((score,index) => {
     score.innerHTML = `${data[index].score} /`
 })
+
+//adding the total score to the page
 
 const scoresArray = []
 
@@ -34,6 +40,8 @@ data.forEach(object => {
 })
 
 totalScore.innerHTML = Math.round(scoresArray.reduce((sum,score) => (sum + score)) / scores.length)
+
+//adding the icons and categories to the page, first creating a new element (img and span) and then assigning the appropriate attributes to them
 
 const iconCategory = document.querySelectorAll(".icon_category")
 
