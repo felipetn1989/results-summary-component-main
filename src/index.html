@@ -16,57 +16,97 @@
 
     <link rel="stylesheet" href="../dist/output.css" />
   </head>
-  <body class="lg:flex lg:flex-col lg:gap-3 lg:justify-center lg:items-center lg:h-[100vh]">
-    <main class="shadow-lg lg:flex lg:rounded-[2rem]">
+  <body
+    class="lg:flex lg:flex-col lg:gap-3 lg:justify-center lg:items-center lg:h-[100vh]"
+  >
+    <main class="shadow-lg lg:flex lg:rounded-[2rem] lg:mt-10">
       <div
-        class="top_div grid gap-7 text-[#c8c7ff] text-center pt-[1.4375rem] pb-10 text-sm rounded-b-[2rem] lg:rounded-[2rem]"
+        class="top_div grid gap-7 text-[#c8c7ff] text-center pt-[1.4375rem] pb-10 text-sm rounded-b-[2rem] lg:rounded-[2rem] lg:w-[23rem] lg:pt-[2.75rem] lg:pb-[3.25rem] lg:gap-[2.5rem]"
       >
-        <h1 class="font-bold text-base tracking-tighter">Your Result</h1>
+        <h1 class="font-bold text-base tracking-tighter lg:text-[1.375rem]">
+          Your Result
+        </h1>
         <div
-          class="circle flex flex-col place-self-center gap-3 border border-[transparent] rounded-full p-8 w-36"
+          class="circle flex flex-col place-self-center gap-3 border border-[transparent] rounded-full p-8 w-36 lg:w-48 lg:h-48 lg:p-[3.1875rem] lg:gap-1 lg:mb-3"
         >
-          <span class="text-white font-extrabold text-5xl">76</span>
-          <span>of 100</span>
+          <span class="text-white font-extrabold text-5xl lg:text-[4.25rem]">76</span>
+          <span class="lg:text-base">of 100</span>
         </div>
-        <h2 class="text-white text-xl font-bold mt-[-0.75rem]">Great</h2>
-        <p class="mt-[-1rem] w-64 place-self-center">
+        <h2
+          class="text-white text-xl font-bold mt-[-0.75rem] lg:text-[1.6875rem]"
+        >
+          Great
+        </h2>
+        <p
+          class="mt-[-1rem] w-64 place-self-center lg:text-base lg:mt-[-1.3125rem]"
+        >
           You scored higher than 65% of the people who have taken these tests.
         </p>
       </div>
 
-      <div class="grid gap-6 py-6 px-8">
-        <h3 class="font-bold tracking-tighter">Summary</h3>
-        <div class="grid gap-5">
-          <div class="flex justify-between bg-[#ff575721] px-3 py-4 rounded-md">
-            <div class="flex gap-3 text-[#ff5757] font-bold text-sm">
+      <div class="grid gap-6 py-6 px-8 lg:w-[23rem] lg:px-10 lg:py-10">
+        <h3 class="font-bold tracking-tighter lg:text-xl">Summary</h3>
+        <div
+          class="grid gap-5 lg:gap-3 lg:mt-[-.625rem] lg:translate-y-[-0.75rem]"
+        >
+          <div
+            class="flex justify-between items-center bg-[#ff575715] px-3 py-4 rounded-md lg:py-3.5 lg:px-3.5"
+          >
+            <div
+              class="flex gap-3 text-[#ff5757] font-bold text-sm lg:text-base lg:tracking-tight"
+            >
               <img src="../assets/images/icon-reaction.svg" alt="" />
               Reaction
             </div>
-            <div class="text-sm flex gap-2.5"><span class="font-bold">80 /</span> <span>100</span></div>
+            <div class="text-sm flex gap-2.5 items-center lg:text-base">
+              <span class="font-bold">80 /</span> <span>100</span>
+            </div>
           </div>
-          <div class="flex justify-between bg-[#ffb11f21] px-3 py-4 rounded-md">
-            <div class="flex gap-3 text-[#ffb11f] font-bold text-sm">
+          <div
+            class="flex justify-between items-center bg-[#ffb11f15] px-3 py-4 rounded-md lg:py-3.5 lg:px-3.5"
+          >
+            <div
+              class="flex gap-3 text-[#ffb11f] font-bold text-sm lg:text-base lg:tracking-tight"
+            >
               <img src="../assets/images/icon-memory.svg" alt="" />
               Memory
             </div>
-            <div class="text-sm flex gap-2.5"><span class="font-bold">92 /</span> <span>100</span></div>
+            <div class="text-sm flex gap-2.5 items-center lg:text-base">
+              <span class="font-bold">92 /</span> <span>100</span>
+            </div>
           </div>
-          <div class="flex justify-between bg-[#00bd9121] px-3 py-4 rounded-md">
-            <div class="flex gap-3 text-[#00bd91] font-bold text-sm">
+          <div
+            class="flex justify-between items-center bg-[#00bd9115] px-3 py-4 rounded-md lg:py-3.5 lg:px-3.5"
+          >
+            <div
+              class="flex gap-3 text-[#00bd91] font-bold text-sm lg:text-base lg:tracking-tight"
+            >
               <img src="../assets/images/icon-verbal.svg" alt="" />
               Verbal
             </div>
-            <div class="text-sm flex gap-2.5"><span class="font-bold">61 /</span> <span>100</span></div>
+            <div class="text-sm flex gap-2.5 items-center lg:text-base">
+              <span class="font-bold">61 /</span> <span>100</span>
+            </div>
           </div>
-          <div class="flex justify-between bg-[#1125d421] px-3 py-4 rounded-md">
-            <div class="flex gap-3 text-[#1125d4] font-bold text-sm">
+          <div
+            class="flex justify-between items-center bg-[#1125d415] px-3 py-4 rounded-md lg:py-3.5 lg:px-3.5"
+          >
+            <div
+              class="flex gap-3 text-[#1125d4] font-bold text-sm lg:text-base lg:tracking-tight"
+            >
               <img src="../assets/images/icon-visual.svg" alt="" />
               Visual
             </div>
-            <div class="text-sm flex gap-2.5"><span class="font-bold">72 /</span> <span>100</span></div>
+            <div class="text-sm flex gap-2.5 items-center lg:text-base">
+              <span class="font-bold">72 /</span> <span>100</span>
+            </div>
           </div>
         </div>
-        <button class="text-white font-bold bg-[#303b5a] mt-0.5 py-4 rounded-full tracking-tight">Continue</button>
+        <button
+          class="text-white font-bold bg-[#303b5a] mt-0.5 py-4 rounded-full tracking-tight lg:py-1 lg:translate-y-[-0.125rem]"
+        >
+          Continue
+        </button>
       </div>
     </main>
 
