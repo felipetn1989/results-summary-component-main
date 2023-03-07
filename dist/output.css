@@ -816,6 +816,24 @@ body {
   color: hsl(228, 45%, 44%);
 }
 
+.hover\:cursor-pointer:hover {
+  cursor: pointer;
+}
+
+.hover\:bg-\[\]:hover {
+  background-color: ;
+}
+
+.hover\:bg-\[\#2e2be9\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(46 43 233 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[red\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 0 0 / var(--tw-bg-opacity));
+}
+
 @media (min-width: 1024px) {
   .lg\:mt-6 {
     margin-top: 1.5rem;
