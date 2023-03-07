@@ -48,6 +48,7 @@ const iconCategory = document.querySelectorAll(".icon_category")
 function createElements(index) {
     let image = document.createElement("img")
     image.setAttribute("src", data[index].icon)
+    image.setAttribute("alt","Icon")
     iconCategory[index].appendChild(image)
     let category = document.createElement("span")
     category.innerHTML = data[index].category
