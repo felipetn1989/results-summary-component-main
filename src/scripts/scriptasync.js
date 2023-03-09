@@ -1,5 +1,5 @@
 async function dataInput() {
-  const response = await fetch("../data.json");
+  const response = await fetch("https://api.npoint.io/c9188df1ef3721c55669");
   const text = await response.text();
   const data = await JSON.parse(text);
 
