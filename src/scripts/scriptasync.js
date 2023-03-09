@@ -3,12 +3,14 @@ async function dataInput() {
   const text = await response.text();
   const data = await JSON.parse(text);
 
+  console.log(data)
+
   //adding the score values to the page
 
   const scores = document.querySelectorAll(".score");
 
-  scores.forEach((score, index) => {
-    score.innerHTML = `${data[index].score} /`;
+  scores.forEach((value, index) => {
+    value.innerHTML = `${data[index].score} /`;
   });
 
   //adding the total score to the page
